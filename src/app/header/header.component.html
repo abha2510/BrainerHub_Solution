@@ -1,0 +1,9 @@
+<mat-toolbar>
+    <span>Dashboard</span>
+    <button mat-icon-button (click)="navigateToCart()">
+      <mat-icon>shopping_cart</mat-icon>
+      <span>{{ cartCount }}</span>
+    </button>
+    <button mat-button (click)="logout()">Logout</button>
+  </mat-toolbar>
+  

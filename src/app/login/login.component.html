@@ -1,0 +1,16 @@
+<img src="https://media.licdn.com/dms/image/C560BAQEnMeIQ5U00Pg/company-logo_200_200/0/1621505835118?e=1704931200&v=beta&t=GeBzXqlI5zUR4WMOm69XLDGUDYsrCoozcTf9P_itQoo" alt="logo">
+<mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Email" [(ngModel)]="email" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" [(ngModel)]="password" required>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="login()">Login</button>
+    </mat-card-actions>
+  </mat-card>
+  

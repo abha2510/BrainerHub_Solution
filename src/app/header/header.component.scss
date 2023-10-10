@@ -1,0 +1,39 @@
+.spacer {
+    flex: 1 1 auto;
+}
+mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; // to make sure it stays on top of other elements
+    background-color: #3f51b5; // a shade of blue
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    color: #fff;
+
+    span {
+        font-weight: 800; // makes the "Dashboard" text bolder
+        flex-grow: 1; // allows the span to take up all available space, pushing the buttons to the right
+    }
+
+    button {
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .mat-icon-button {
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #ff4081; 
+            border-radius: 50%;
+            padding: 2px 5px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+}
